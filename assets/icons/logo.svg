@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Cercle extérieur avec gradient -->
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6bb6ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3d8bd4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Cercle principal -->
+  <circle cx="100" cy="100" r="90" stroke="url(#logoGradient)" stroke-width="3" fill="none" opacity="0.3"/>
+  
+  <!-- Forme centrale - représente "L" stylisé -->
+  <path d="M 60 60 L 60 140 L 120 140" stroke="url(#logoGradient)" stroke-width="8" stroke-linecap="round" fill="none" filter="url(#glow)"/>
+  
+  <!-- Points lumineux -->
+  <circle cx="60" cy="60" r="6" fill="#6bb6ff" filter="url(#glow)"/>
+  <circle cx="60" cy="140" r="6" fill="#6bb6ff" filter="url(#glow)"/>
+  <circle cx="120" cy="140" r="6" fill="#6bb6ff" filter="url(#glow)"/>
+  
+  <!-- Éléments décoratifs - représentent le "Lab" -->
+  <circle cx="140" cy="80" r="3" fill="#6bb6ff" opacity="0.6"/>
+  <circle cx="130" cy="100" r="2" fill="#6bb6ff" opacity="0.4"/>
+  <circle cx="145" cy="110" r="2.5" fill="#6bb6ff" opacity="0.5"/>
+</svg>

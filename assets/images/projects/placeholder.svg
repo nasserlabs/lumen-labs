@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f0f12;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6bb6ff;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#3d8bd4;stop-opacity:0.1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fond -->
+  <rect width="800" height="600" fill="url(#bgGrad)"/>
+  
+  <!-- Grille décorative -->
+  <line x1="0" y1="150" x2="800" y2="150" stroke="#6bb6ff" stroke-width="1" opacity="0.1"/>
+  <line x1="0" y1="300" x2="800" y2="300" stroke="#6bb6ff" stroke-width="1" opacity="0.1"/>
+  <line x1="0" y1="450" x2="800" y2="450" stroke="#6bb6ff" stroke-width="1" opacity="0.1"/>
+  <line x1="200" y1="0" x2="200" y2="600" stroke="#6bb6ff" stroke-width="1" opacity="0.1"/>
+  <line x1="400" y1="0" x2="400" y2="600" stroke="#6bb6ff" stroke-width="1" opacity="0.1"/>
+  <line x1="600" y1="0" x2="600" y2="600" stroke="#6bb6ff" stroke-width="1" opacity="0.1"/>
+  
+  <!-- Formes décoratives -->
+  <circle cx="150" cy="150" r="80" fill="url(#accentGrad)"/>
+  <circle cx="650" cy="450" r="100" fill="url(#accentGrad)"/>
+  <rect x="300" y="200" width="200" height="200" fill="url(#accentGrad)" opacity="0.3"/>
+  
+  <!-- Icône code -->
+  <g transform="translate(400, 300)">
+    <circle r="60" fill="none" stroke="#6bb6ff" stroke-width="2" opacity="0.3"/>
+    <text x="0" y="0" font-family="monospace" font-size="80" fill="#6bb6ff" opacity="0.5" text-anchor="middle" dominant-baseline="middle">&lt;/&gt;</text>
+  </g>
+  
+  <!-- Texte -->
+  <text x="400" y="500" font-family="Arial, sans-serif" font-size="24" fill="#6bb6ff" opacity="0.4" text-anchor="middle">Image du projet</text>
+</svg>
